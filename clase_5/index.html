@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="estilos.css">
+    <!-- CSS de Bootstrap --><link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body data-bs-theme="light">
+    <div class="container min-vh-100 d-flex justify-content-center align-items-center">
+      <div class="row">
+        <div class="col-12">  
+          <form class="formulario p-4 needs-validation" novalidate>
+            <h1 class="text-center">Formulario</h1>
+            <div class="mb-3">
+              <label for="nombre" class="form-label">Nombre</label>              
+              <input type="text" class="form-control rounded-pill" id="nombre" required/>
+              <div class="valid-feedback">
+                El dato ingresado es correcto
+              </div>
+              <div class="invalid-feedback">
+                El campo es obligatorio
+              </div>
+              
+            </div>
+  
+            <div class="mb-3">
+              <label for="apellido" class="form-label">Apellido</label>              
+              <input type="text" class="form-control rounded-pill" id="apellido" required/>
+              
+              <div class="valid-feedback">
+                El dato ingresado es correcto
+              </div>
+              <div class="invalid-feedback">
+                El campo es obligatorio
+              </div>
+              
+            </div>
+  
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>              
+              <input type="email" class="form-control rounded-pill" id="email" required/>
+              
+              <div class="valid-feedback">
+                El dato ingresado es correcto
+              </div>
+              <div class="invalid-feedback">
+                El campo es obligatorio
+              </div>
+              
+            </div>
+  
+            <div class="mb-3">
+              <label for="f-nacimiento" class="form-label">Fecha de Nacimiento</label>              
+              <input type="date" class="form-control rounded-pill" id="f-nacimiento" required/>
+              
+              <div class="valid-feedback">
+                El dato ingresado es correcto
+              </div>
+              <div class="invalid-feedback">
+                El campo es obligatorio
+              </div>
+              
+            </div>
+            
+            <div class="mb-3">
+              <label for="pais" class="form-label">Pais de Residencia</label>              
+              <input type="pais" class="form-control rounded-pill" id="pais" required/>
+              
+              <div class="valid-feedback">
+                El dato ingresado es correcto
+              </div>
+              <div class="invalid-feedback">
+                El campo es obligatorio
+              </div>
+            </div>
+            
+            <button type="submit" class="btn btn-success w-100 mb-3">Submit</button>
+            <button type="button" class="btn btn-primary" id="tema-claro">Estilo 1</button>
+            <button type="button" class="btn btn-primary" id="tema-oscuro">Estilo de Alto Constraste</button>          
+          </form>
+        </div>
+      </div>
+    </div>
+  
+  
+    <script src="app.js"></script>      
+  </body>
+
+</html>
